@@ -38,3 +38,6 @@ load_conf_file $CONFIG_FILE
 
 echo "Git"
 . git/git-setup.sh
+
+echo "Nano"
+. nano/nano-setup.sh

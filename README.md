@@ -19,6 +19,12 @@ chmod 755 dotfiles_setup.sh
 ./dotfiles_setup.sh
 ```
 
+Applications
+------------
+The following applications are configured:
++ git
++ nano (just in case I mess-up vi)
+
 License
 -------
 See the LICENSE file
