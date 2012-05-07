@@ -1,0 +1,12 @@
+##
+## Set of Variables Used in Configuration Scripts
+##
+
+##User Information
+USER_FULLNAME=""		#FirstName LastName
+USER_EMAIL=""			#Email address
+
+##Defaults. You may change if you wish
+USER_LOCAL_ACCOUNT=$USER	#Account on local machine
+GIT_USERNAME=$USER_FULLNAME	#git user.name
+GIT_EMAIL=$USER_EMAIL		#git user.email
