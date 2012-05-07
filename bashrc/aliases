@@ -1,0 +1,18 @@
+##
+## Bash Aliases
+##
+
+#Package update
+alias update='sudo aptitude update; sudo aptitude safe-upgrade'
+
+#Recusive checksums
+alias md5all='find $@ ! -type d -exec md5sum {} \;'
+alias shaall='find $@ ! -type d -exec sha1sum {} \;'
+
+#List all IP addresses including external
+alias myip='ip addr show | awk '\''$1 == "inet" && $6 == "global" {if ($7 == "secondary"){print $8" "$2} else {print $7" "$2}}'\'' | column -t && echo -n "inet  " && wget -qO- checkip.dyndns.org | sed -e '\''s/[^[:digit:]\|.]//g'\'''
+
+#Todo.txt
+alias t='/usr/local/bin/todo.txt_cli/todo.sh -d ~/.todo.cfg'
+alias tq='/usr/local/bin/todo.txt_cli/todo.sh -d ~/.todo_quakesim.cfg'
+

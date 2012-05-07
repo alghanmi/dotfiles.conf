@@ -36,6 +36,9 @@ load_conf_file $CONFIG_FILE
 ##	Comment out any script you would like to be ignored
 ##
 
+echo "Bash"
+. bashrc/bashrc-setup.sh
+
 echo "Git"
 . git/git-setup.sh
 
