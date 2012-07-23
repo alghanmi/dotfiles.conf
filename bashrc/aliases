@@ -3,7 +3,7 @@
 ##
 
 #Package update
-alias update='sudo apt-get update; sudo apt-get safe-upgrade'
+alias update='sudo apt-get update; sudo apt-get upgrade'
 
 #Recusive checksums
 alias md5all='find $@ ! -type d -exec md5sum {} \;'
@@ -16,3 +16,5 @@ alias myip='ip addr show | awk '\''$1 == "inet" && $6 == "global" {if ($7 == "se
 alias t='/usr/local/bin/todo.txt_cli/todo.sh -d ~/.todo.cfg'
 alias tq='/usr/local/bin/todo.txt_cli/todo.sh -d ~/.todo_quakesim.cfg'
 
+#Emacs
+alias emacs='emacs -nw'
