@@ -44,3 +44,6 @@ echo "Git"
 
 echo "Nano"
 . nano/nano-setup.sh
+
+echo "Java"
+. java_home/java_home-setup.sh
