@@ -23,3 +23,11 @@ echo "##" >> ~/.bashrc
 echo "" >> ~/.bashrc
 echo "## Aliases" >> ~/.bashrc
 echo ". $SCRIPT_DIR/bashrc/aliases" >> ~/.bashrc
+
+#Bash History Merge
+echo "" >> ~/.bashrc
+echo "## Bash History Merge" >> ~/.bashrc
+echo "shopt -s histappend" >> ~/.bashrc
+echo "export HISTCONTROL=ignoredups" >> ~/.bashrc
+echo "export HISTSIZE=10000" >> ~/.bashrc
+echo "PROMPT_COMMAND=\"history -a;\"" >> ~/.bashrc
