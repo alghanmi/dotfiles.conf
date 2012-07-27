@@ -47,3 +47,6 @@ echo "Nano"
 
 echo "Java"
 . java_home/java_home-setup.sh
+
+echo "MPlayer"
+. mplayer/mplayer-setup.sh
