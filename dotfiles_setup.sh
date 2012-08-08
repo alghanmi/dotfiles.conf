@@ -50,3 +50,6 @@ echo "Java"
 
 echo "MPlayer"
 . mplayer/mplayer-setup.sh
+
+echo "Unity"
+. unity/unity-config.sh
