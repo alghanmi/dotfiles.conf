@@ -19,6 +19,12 @@ git config --global color.branch auto
 git config --global color.interactive auto
 git config --global color.ui auto
 
+#LF Normalization (Linux & MacOS)
+git config --global core.autocrlf input
+
+#LF Normalization (Windows)
+#git config --global core.autocrlf true
+
 #Global gitignore
 ln -s $SCRIPT_DIR/git/gitignore ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
