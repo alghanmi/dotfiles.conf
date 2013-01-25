@@ -21,3 +21,6 @@ alias emacs='emacs -nw'
 
 #MPlayer
 alias mplayerwmv='mplayer -vc ffwmv3'
+
+#Force monitor turn off
+alias moff='sudo xset dpms force off'
