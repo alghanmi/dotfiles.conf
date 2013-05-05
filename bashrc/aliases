@@ -3,7 +3,7 @@
 ##
 
 #Package update
-alias update='sudo apt-get update; sudo apt-get upgrade'
+alias update='sudo aptitude update; sudo aptitude upgrade'
 
 #Recusive checksums
 alias md5all='find $@ ! -type d -exec md5sum {} \;'
@@ -24,3 +24,10 @@ alias mplayerwmv='mplayer -vc ffwmv3'
 
 #Force monitor turn off
 alias moff='sudo xset dpms force off'
+
+#Git - pull all repos within a directory
+alias gpull='for i in $(find . -type d -maxdepth 1 -mindepth 1 | tr "\n" " "); do echo "Checking $i"; cd $i; git pull; cd ..; done'
+
+#Nexus 7
+alias mn7='sudo mtpfs -o allow_other /media/nexus7'
+alias umn7='sudo umount /media/nexus7'
