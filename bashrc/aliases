@@ -19,6 +19,8 @@ alias tq='/usr/local/bin/todo.txt_cli/todo.sh -d ~/.todo_quakesim.cfg'
 #Emacs
 alias emacs='emacs -nw'
 
+alias tmux='tmux -2'
+
 #MPlayer
 alias mplayerwmv='mplayer -vc ffwmv3'
 

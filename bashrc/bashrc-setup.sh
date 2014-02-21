@@ -19,6 +19,11 @@ echo "##" >> ~/.bashrc
 echo "## User Modifications" >> ~/.bashrc
 echo "##" >> ~/.bashrc
 
+echo '##Set $TERM for TMUX' >> ~/.bashrc
+echo 'if [ -n "$TMUX" ]; then' >> ~/.bashrc
+echo '    export TERM=screen-256color' >> ~/.bashrc
+echo 'fi' >> ~/.bashrc
+
 #Add aliases
 echo "" >> ~/.bashrc
 echo "## Aliases" >> ~/.bashrc
