@@ -42,6 +42,9 @@ echo "Bash"
 echo "Git"
 . git/git-setup.sh
 
+echo "TMUX"
+. tmux/tmux-setup.sh
+
 echo "Nano"
 . nano/nano-setup.sh
 
