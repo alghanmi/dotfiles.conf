@@ -19,6 +19,7 @@ alias tq='/usr/local/bin/todo.txt_cli/todo.sh -d ~/.todo_quakesim.cfg'
 #Emacs
 alias emacs='emacs -nw'
 
+#TMUX 256-colors
 alias tmux='tmux -2'
 
 #MPlayer
