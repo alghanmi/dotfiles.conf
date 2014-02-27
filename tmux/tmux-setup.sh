@@ -15,18 +15,18 @@ mkdir -p ~/.tmux.conf.d
 curl --silent -o ~/.tmux.conf.d/tmuxcolors-dark.conf https://raw.github.com/seebi/tmux-colors-solarized/master/tmuxcolors-dark.conf
 
 #Scripts
-curl --silent -o ~/.tmux.conf.d/restart-required.sh https://raw.github.com/seebi/tmux-colors-solarized/master/restart-required.sh
+curl --silent -o ~/.tmux.conf.d/restart-required.sh https://raw.github.com/alghanmi/dotfiles.conf/master/tmux/restart-required.sh
 chmod 755 ~/.tmux.conf.d/restart-required.sh
 
 #OS Specific Configuration
 case $(uname -s) in
 	"Linux")
-		curl --silent -o ~/.tmux.conf.d/clipboard-linux.conf https://raw.github.com/seebi/tmux-colors-solarized/master/clipboard-linux.conf
+		curl --silent -o ~/.tmux.conf.d/clipboard-linux.conf https://raw.github.com/alghanmi/dotfiles.conf/master/tmux/clipboard-linux.conf
 		echo "source ~/.tmux.conf.d/clipboard-linux.conf" >> ~/.tmux.conf
 	;;
 	
 	"Darwin")
-		curl --silent -o ~/.tmux.conf.d/clipboard-macos.conf https://raw.github.com/seebi/tmux-colors-solarized/master/clipboard-macos.conf
+		curl --silent -o ~/.tmux.conf.d/clipboard-macos.conf https://raw.github.com/alghanmi/dotfiles.conf/master/tmux/clipboard-macos.conf
 		echo "source ~/.tmux.conf.d/clipboard-macos.conf" >> ~/.tmux.conf
 	;;
 esac
