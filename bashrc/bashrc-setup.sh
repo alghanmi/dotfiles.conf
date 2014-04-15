@@ -36,3 +36,8 @@ echo "shopt -s histappend" >> ~/.bashrc
 echo "export HISTCONTROL=ignoredups" >> ~/.bashrc
 echo "export HISTSIZE=10000" >> ~/.bashrc
 echo "PROMPT_COMMAND=\"history -a;\"" >> ~/.bashrc
+
+#Library and Compiler Path Setup
+echo "" >> ~/.bashrc
+echo "##LD Library Path" >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib' >> ~/.bashrc
