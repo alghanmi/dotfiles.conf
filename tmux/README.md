@@ -28,6 +28,20 @@ set t_Co=256                        " force vim to use 256 colors
 let g:solarized_termcolors=256      " use solarized 256 fallback
 ```
 
+##Mac Installation Notes
+In order for this work properly on mac, you would need to install [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/)
+
+```bash
+brew install reattach-to-user-namespace
+```
+
+Also, `tmux` only runs `.bashrc` and not `.bash_profile` when starting. Therefore, I advise to have all your setup in `~/.bashrc` and have the following code as your `~/.bash_profile`:
+
+```bash
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+```
 
 ###Notes
   + [Forcing TERM is bad](http://blog.sanctum.geek.nz/term-strings/)
